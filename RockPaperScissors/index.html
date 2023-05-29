@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang ="en">
+    <head>
+        <meta charset = "UTF-8">
+        <link rel="stylesheet" href="style.css">
+        <script src="java.js" defer></script>
+        <title>Let's play!</title>
+        <link rel="icon" type="images/png" href="../images/favicon-16x16.png" />
+    </head>
+
+    <body>
+        <div class="mega-container">
+            <header>
+                <img src="../images/main.png" class="main-picture">
+                <h1>LET'S PLAY ROCK PAPER SCISSORS!!</h1>
+            </header>
+            
+            <div class="game-log">
+                <div class="game-line1"></div>
+                <div class="game-line2"></div>
+                <div class="game-line3"></div>
+            </div>
+
+            <div class="content">
+                <div class="rules"><button>rules</button></div>
+
+                <dialog class="modal">
+                    <header>
+                        <h2>Game rules</h2>
+                        <button class="close-button">x</button>
+                    </header>
+
+                    <ol>
+                        <li>Playing rock paper scissors is easy. First, pick rock, paper, or scissors...DUH</li>
+                        <li>The first person to reach a score of 5 wins.</li>
+                        <li>What are you waiting for? Go beat this machine!</li>
+                    </ol>
+                </dialog>
+
+                <div class="options-container">
+                    <button class="rock-btn"><img src="../images/rock.png"></button>
+                    <button class="paper-btn"><img src="../images/paper.png"></button>
+                    <button class="scissors-btn"><img src="../images/scissors.png"></button>
+                </div>
+
+                <div class="score">
+                    <div class="score">SCORE</div>
+                    <div class="computer-score">Computer: 0</div>
+                    <div class="your-score">You: 0</div>
+                </div>
+
+                <dialog class="scoring">
+                    <h2 class="winner-finder"></h2>
+                    <button class="try-again">Try again</button>
+                </dialog>
+            </div>
+
+            <footer>
+                    <p>made by SushiBanana</p>
+                    <a href="https://github.com/SushiBanana" target="_blank"><img src="../images/github.png" class="githublogo"></footer></a>
+            </footer>
+        </div>
+    </body>
+</html>

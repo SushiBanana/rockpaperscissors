@@ -1,0 +1,135 @@
+body {
+    font-family: 'Franklin Gothic Medium';
+    background-color: #aedcec;
+    margin: 0;
+    height: 100%;
+}
+
+.mega-container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    justify-content: space-around;
+    padding: 0px;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+h1 {
+    color: #516c97;
+}
+
+.main-picture {
+    width: 200px;
+    
+}
+
+.game-log {
+    text-align: center;
+    font-family: "Trebuchet MS";
+}
+
+.content {
+    display: flex;
+    justify-content: space-between;
+}
+
+div .rules,
+div .score{
+    flex: auto;
+    text-align: center;
+}
+
+.options-container img {
+    -webkit-filter: drop-shadow(2px 2px 0 white)
+                    drop-shadow(-2px 2px 0 white)
+                    drop-shadow(2px -2px 0 white)
+                    drop-shadow(-2px -2px 0 white);
+
+    filter: drop-shadow(2px 2px 0 white)
+            drop-shadow(-2px 2px 0 white)
+            drop-shadow(2px -2px 0 white)
+            drop-shadow(-2px -2px 0 white);
+
+    transition: all 0.4s;
+}
+
+.options-container img:hover {
+    transform: scale(1.1);
+    -webkit-filter: drop-shadow(2px 2px 0 grey)
+                    drop-shadow(-2px 2px 0 grey)
+                    drop-shadow(2px -2px 0 grey)
+                    drop-shadow(-2px -2px 0 grey);
+
+    filter: drop-shadow(2px 2px 0 grey)
+            drop-shadow(-2px 2px 0 grey)
+            drop-shadow(2px -2px 0 grey)
+            drop-shadow(-2px -2px 0 grey);
+}
+
+.options-container button {
+    background: none;
+    color: inherit;
+    border: none;
+}
+
+.rules button,
+.try-again {
+    background-color: rgba(128, 128, 128, 0.151);
+    border: 3px black solid;
+    border-radius: 0px;
+    box-shadow: 10px 2px;
+    transition: all 0.3s;
+    font-size: 20px;
+}
+
+.rules button:hover,
+.try-again:hover {
+    box-shadow: none;
+}
+
+.rules button:active,
+.try-again:active {
+    background-color: rgba(163, 160, 160, 0.027);
+    letter-spacing: 5px;
+}
+
+.githublogo {
+    height: 30px;
+    padding-left: 10px;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Cambria"
+}
+
+.modal header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.modal::backdrop,
+.scoring::backdrop {
+    background: black;
+    opacity: .4;
+}
+
+.modal,
+.scoring {
+    box-shadow: 10px 10px 2px 2px black
+}
+
+.close-button {
+    border: none;
+    background: none;
+    color: inherit;
+    font-size: 20px;
+}
+
